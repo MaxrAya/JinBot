@@ -29,7 +29,7 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 PROXY_URL = os.getenv("PROXY_URL")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/")
-AI_MODELS = [m.strip() for m in os.getenv("AI_MODEL", "gemini-3.8-flash,gemini-3.6-flash,gemini-2.5-flash").split(",")]
+AI_MODELS = [m.strip() for m in os.getenv("AI_MODEL", "gemini-3.6-flash,gemini-3.5-flash,gemini-3.5-flash-lite,gemini-3-flash").split(",")]
 ADMIN_IDS = [int(x.strip()) for x in os.getenv("ADMIN_IDS", "").split(",") if x.strip()]
 
 DATA_DIR = Path("data")
